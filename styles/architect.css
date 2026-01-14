@@ -103,6 +103,7 @@ header{
     margin: 0 auto;
     display: flex;
     padding-top: 85px;
+    margin-bottom: 130px;
 
     justify-content: space-between;
     align-items: center;
@@ -148,7 +149,87 @@ header{
 }
 
 
+/* love-features section */
 
+.love-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.love-title h1{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: bold;
+    max-width: 468px;
+    margin-bottom: 24px;
+}
+
+.love-title p{
+    color:#727272;
+    font-size: 1rem;
+    max-width: 586px;
+    margin-bottom: 30px;
+}
+
+.love-box{
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    max-width: 586px;
+    gap: 20px;
+
+  
+   
+}
+
+.love-box .box{
+      /* border: 1px solid red; */
+      padding:30px 42px 30px 30px ;
+      border-radius: 8px;
+      box-shadow: 0px 6px 50px #00000016;
+}
+.love-box .box h3{
+    color: #131313;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+.love-box .box p{
+        color: #727272;
+        font-size: 1rem;
+       line-height: 26px;
+}
+
+.love-image{
+    position: relative;
+    max-width: 708px;
+}
+.love-image img{
+    width: 100%;
+
+}
+
+.experience-card{
+    position: absolute;
+    bottom: -40px;
+    left: -30px;
+    padding: 46px 42px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 8px;
+
+}
+
+.experience-card h2{
+    font-weight: bold;
+    font-size: 4.2rem;
+}
+.experience-card p{
+    font-size: 1.3rem;
+}
 
 
 
@@ -181,9 +262,10 @@ header{
     #features  .features-image{
         grid-template-columns: repeat(1,1fr);
     }
-  
-
-
+.love-container{
+   flex-direction: column;
+}
+}
 
 @media screen and (min-width:576px) and (max-width:992px){
  
