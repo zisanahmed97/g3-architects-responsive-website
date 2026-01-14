@@ -48,7 +48,9 @@ header{
   text-decoration: none;
 
 }
-
+ .nav-item:hover{
+    background-color: #72727284;
+ }
 
 #hero{
    
@@ -84,6 +86,10 @@ header{
      padding: 21px 24px;
      border-radius: 8px;
      border: none;
+}
+
+.btn-primary:hover{
+    background-color: #72727284;
 }
 
 #hero .hero-image img{
@@ -284,6 +290,62 @@ header{
     font-size: 1.3rem;
     font-weight: 500;
  }
+/* sponsor section */
+.sponsor-container{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.sponsor-container .sponsor-content{
+    text-align: center;
+}
+ .sponsor-content h3{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+ }
+
+ .sponsor-content p{
+    color: #727272;
+    font-size: 1rem;
+    max-width: 542px;
+   
+    margin:0 auto 52px;
+    
+ }
+
+ .sponsor-badge{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+ }
+
+ .sponsor-badge img{
+    max-width: 167px;
+    gap: 157px;
+    margin-bottom: 130px;
+    
+ }
+
+ /* copyright section */
+ .copyright-container{
+    max-width: 1440px;
+    background-color: #FFF4E7;
+    margin: 0 auto 216px;
+ }
+
+  .copyright-content p{
+    font-size: 1.2rem;
+    
+    max-width: 620px;
+    color: #424242;
+    text-align: center;
+    padding: 39px 410px;
+ }
+
+
+
 
 
 
@@ -325,16 +387,50 @@ header{
     grid-template-columns: repeat(1,1fr);
     margin-left: 100px;
 }
+.sponsor-badge{
+     grid-template-columns: repeat(1,1fr);
+     margin-left: 200px;
+}
 
-
+.copyright-content p{
+    font-size: 1rem;
+        padding: 25px 0;
+}
 
 
 
 }
 
 @media screen and (min-width:576px) and (max-width:992px){
- 
+ .sponsor-badge{
+     grid-template-columns: repeat(2,1fr);
+     margin-left: 100px;
+}
 
+.fact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.fact-box{
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 150px;
+}
+
+.love-container{
+   flex-direction: column;
+}
+ #features .features-container{
+        flex-direction: column;
+    }
+
+    #features  .features-image{
+        grid-template-columns: repeat(1,1fr);
+    }
+.copyright-content p{
+    font-size: 1rem;
+        padding: 25px 0;
+}
 }
 
 
